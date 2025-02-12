@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .table {
+        border: solid black;
+        /* border-collapse: collapse; */
+        /* text-align: center; */
+        margin-left: 300px;
+      }
+      #bt {
+        text-align: center;
+      }
+      #ta {
+        overflow-x: scroll;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="bt">Admission Enquiry Form</h1>
+    <hr />
+    <table class="table" border="1px" width="50%" cellspacing="5px">
+      <tr>
+        <td>
+          <label for="name"><b>NAME</b></label>
+        </td>
+        <td>
+          <input type="text" size="100" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="address"><b>ADDRESS</b></label>
+        </td>
+        <td>
+          <input type="text" size="100" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="number"><b>NUMBER</b></label>
+        </td>
+        <td>
+          <input type="text" size="40" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="DOB"><b>DOB</b></label>
+        </td>
+        <td>
+          <input type="date" size="40" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email"><b>EMAIL</b></label>
+        </td>
+        <td>
+          <input type="email" size="100" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="gender"><b>GENDER</b></label>
+        </td>
+        <td>
+          <input name="radioButton" type="radio" />
+          <label for="Male">Male</label>
+          <input name="radioButton" type="radio" />
+          <label for="Male">Female</label>
+          <input name="radioButton" type="radio" />
+          <label for="Male">Other</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="hobbies"><b>HOBBIES</b></label>
+        </td>
+        <td>
+          <input name="radioButton" type="radio" />
+          <label for="Programming">Programming</label>
+          <br />
+          <input name="radioButton" type="radio" />
+          <label for="Construction">Construction</label>
+          <br />
+          <input name="radioButton" type="radio" />
+          <label for="Designning">Designning</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="branch"><b>SELECT BRANCH</b></label>
+        </td>
+        <td>
+          <select>
+            <option value="computer">Computer</option>
+            <option value="civil">Civil</option>
+            <option value="Ec">E&Tc</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="rate"><b>RATE THIS SITE</b></label>
+        </td>
+        <td>
+          <input type="number" max="5" min="0" col="5" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="comment"><b>COMMENTS</b></label>
+        </td>
+        <td>
+          <textarea
+            name="comment"
+            id="ta"
+            rows="5"
+            cols="70"
+            placeholder="Give your answer here"
+          ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" id="bt">
+          <input type="button" value="Submit" />
+
+          <input type="button" value="Reset" />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
